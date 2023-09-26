@@ -5,7 +5,7 @@ using TMPro;
 
 public class gamecontrol : MonoBehaviour
 {
-    public TextMeshProUGUI timetext, balloontext;
+    public TextMeshProUGUI timetext, balloontext, gameover;
     public GameObject bomm;
     public float timecount = 60;
     int bcount = 0;
@@ -29,6 +29,7 @@ public class gamecontrol : MonoBehaviour
             for (int i = 0; i<go.Length; i++)
             {
                 Instantiate(bomm, go[i].transform.position, go[i].transform.rotation);
+                gameover.text = "GAME \n OVER!";
                 Destroy(go[i]);
             }
         }
