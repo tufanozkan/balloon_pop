@@ -6,7 +6,8 @@ using TMPro;
 public class gamecontrol : MonoBehaviour
 {
     public TextMeshProUGUI timetext, balloontext;
-    float timecount = 60;
+    public GameObject bomm;
+    public float timecount = 60;
     int bcount = 0;
     // Start is called before the first frame update
     void Start()
@@ -17,8 +18,20 @@ public class gamecontrol : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        timecount -= Time.deltaTime;
-        timetext.text = "TIME:" + (int)timecount;
+        if (timecount > 0)
+        {
+            timecount -= Time.deltaTime;
+            timetext.text = "TIME:" + (int)timecount;
+        }
+        else
+        {
+            GameObject[] go = GameObject.FindGameObjectsWithTag("b");
+            for (int i = 0; i<go.Length; i++)
+            {
+                Instantiate(bomm, go[i].transform.position, go[i].transform.rotation);
+                Destroy(go[i]);
+            }
+        }
     }
 
     public void BalonEkle()

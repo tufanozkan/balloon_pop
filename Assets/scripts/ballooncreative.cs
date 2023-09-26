@@ -19,7 +19,7 @@ public class ballooncreative : MonoBehaviour
     void Update()
     {
         timecount -= Time.deltaTime;
-        if (timecount < 0)
+        if (timecount < 0 && gameC.timecount > 0)
         {
             GameObject go = Instantiate(balloon,new Vector3(Random.Range(-2.35f,2.35f), -5.88f, 0), Quaternion.Euler(0, 0, 0)) as GameObject;
             go.GetComponent<Rigidbody2D>().AddForce(new Vector3(0,Random.Range(40f,90f), 0));
