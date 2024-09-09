@@ -46,10 +46,6 @@ Getting started with Balloon Pop is simple:
 
 We welcome contributions from the community! If you'd like to enhance Balloon Pop, please fork the repository and submit a pull request. For any issues or feature requests, open an issue on the [GitHub repository](https://github.com/tufanozkan/balloon_pop).
 
-## License
-
-This project is licensed under the MIT License. For more details, please refer to the [LICENSE](LICENSE) file.
-
 ## Acknowledgments
 
 - **Unity**: For its powerful game development engine that made this project possible.
