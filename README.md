@@ -19,9 +19,36 @@ Balloon Pop is a fast-paced, action-packed game where players test their reflexe
 - **UnityEngine**: The premier game development platform utilized to create a high-fidelity gaming experience with advanced graphics and physics capabilities.
 - **.NET Framework**: The comprehensive runtime framework that supports the C# application, ensuring seamless performance and stability.
 
+## Installation and Setup
+
+Getting started with Balloon Pop is simple:
+
+1. **Clone the Repository**
+    ```bash
+    git clone https://github.com/tufanozkan/balloon_pop.git
+    ```
+2. **Open in Unity**
+    - Launch Unity and select `Open Project`.
+    - Navigate to the cloned repository and open the project to begin.
+
+3. **Build and Play**
+    - Go to `File > Build Settings` to configure your build options.
+    - Hit `Build and Run` to compile the game and dive into the action!
+
+## Gameplay Instructions
+
+- **Controls**: 
+  - Click on the balloons to pop them and score points.
+  - The quicker you pop the balloons, the higher your score will be.
+- **Objective**: Maximize your score before the timer expires.
+
 ## Contributing
 
 We welcome contributions from the community! If you'd like to enhance Balloon Pop, please fork the repository and submit a pull request. For any issues or feature requests, open an issue on the [GitHub repository](https://github.com/tufanozkan/balloon_pop).
+
+## License
+
+This project is licensed under the MIT License. For more details, please refer to the [LICENSE](LICENSE) file.
 
 ## Acknowledgments
 
